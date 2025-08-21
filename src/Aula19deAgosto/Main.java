@@ -7,6 +7,7 @@ public class Main {
 
             String message = service.getHelloMessage();
             printer.print(message);
+
         }
 
 }
