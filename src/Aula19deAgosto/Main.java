@@ -1,13 +1,11 @@
 package Aula19deAgosto;
 
 public class Main {
-        public static void main(String[] args) {
-            Mensagem service = new Mensagem();
-            Mensagem printer = new Mensagem();
+    public static void main(String[] args) {
+        Pessoa pessoa = new Pessoa("Victor", 20);
+        MensagemService mensagem = new MensagemService();
 
-            String message = service.getHelloMessage();
-            printer.print(message);
-
-        }
-
+        String texto = mensagem.sayHello(pessoa);
+        System.out.println(texto);
+    }
 }
